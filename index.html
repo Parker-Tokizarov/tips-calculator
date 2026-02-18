@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор чаевых</title>
+    <!-- Подключаем Telegram WebApp SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- Подключаем стили -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +19,7 @@
         <label for="people">Количество человек</label>
         <input type="number" id="people" placeholder="2" value="2" min="1">
         
-        <label for="tipPercent">Процент чаевых (%)</label>
+        <label>Процент чаевых (%)</label>
         <div class="tip-buttons">
             <button class="tip-btn" data-tip="10">10%</button>
             <button class="tip-btn" data-tip="12">12%</button>
@@ -26,7 +29,7 @@
         <input type="range" id="tipSlider" min="0" max="30" value="15" step="1">
         <span id="tipValue">15%</span>
         
-        <button id="calculateBtn">Рассчитать</button>
+        <!-- Внутренняя кнопка больше не нужна, используем главную кнопку Telegram -->
         
         <div class="result">
             <p>Общая сумма: <span id="total">0</span> ₽</p>
