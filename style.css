@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background: white;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+input[type="number"], input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.tip-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.tip-btn {
+    flex: 1;
+    padding: 10px;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.tip-btn:hover {
+    background: #d0d0d0;
+}
+
+.tip-btn.active {
+    background: #4CAF50;
+    color: white;
+}
+
+#tipSlider {
+    margin: 10px 0;
+}
+
+#tipValue {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#calculateBtn {
+    width: 100%;
+    padding: 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+#calculateBtn:hover {
+    background: #45a049;
+}
+
+.result {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.result p {
+    margin: 10px 0;
+}
+
+.result span {
+    font-weight: bold;
+    color: #4CAF50;
+}
