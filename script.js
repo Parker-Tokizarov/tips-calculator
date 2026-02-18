@@ -58,7 +58,7 @@ calculate(); // начальный расчёт
 
 // Обработка нажатия на главную кнопку Telegram
 mainButton.onClick(function() {
-    calculate(); // обновляем расчёт
+    calculate(); // обновляем расчёт на случай, если пользователь ничего не менял после открытия
     
     // Собираем данные для отправки
     const data = {
@@ -69,7 +69,7 @@ mainButton.onClick(function() {
         perPerson: perPersonSpan.textContent
     };
     
-    // Отправляем данные боту
+    // Отправляем данные боту (именно через эту функцию)
     tg.sendData(JSON.stringify(data));
     
     // Меняем состояние кнопки
